@@ -21,11 +21,11 @@ body {
 
 .container {
   margin: 30px auto;
-  width: 350px;
+  width: 550px;
 }
 
 h1 {
-  letter-spacing: 1px;
+  letter-spacing: 2px;
   margin: 0;
 }
 
@@ -38,11 +38,12 @@ h3 {
 h4 {
   margin: 0;
   text-transform: uppercase;
+  letter-spacing: 2px;
 }
 
 .inc-exp-container {
-  background-color: #fff;
   box-shadow: var(--box-shadow);
+  border-bottom: 1px solid darkslategrey;
   padding: 20px;
   display: flex;
   justify-content: space-between;
@@ -55,21 +56,21 @@ h4 {
 }
 
 .inc-exp-container > div:first-of-type {
-  border-right: 1px solid #dedede;
+  border-right: 1px solid darkslategrey;
 }
 
 .money {
-  font-size: 20px;
+  font-size: 30px;
   letter-spacing: 1px;
   margin: 5px 0;
 }
 
 .money.plus {
-  color: #2ecc71;
+  color: #055a28;
 }
 
 .money.minus {
-  color: #c0392b;
+  color: #5f1a13;
 }
 
 label {
@@ -79,9 +80,10 @@ label {
 
 input[type="text"],
 input[type="number"] {
-  border: 1px solid #dedede;
+  border-bottom: darkslategrey;
   border-radius: 2px;
   display: block;
+  font-family: "Special Elite", cursive;
   font-size: 16px;
   padding: 10px;
   width: 100%;
@@ -89,13 +91,14 @@ input[type="number"] {
 
 .btn {
   cursor: pointer;
-  background-color: #9c88ff;
+  background-color: darkslategrey;
+  font-family: "Special Elite", cursive;
   box-shadow: var(--box-shadow);
   color: #fff;
   border: 0;
   display: block;
-  font-size: 16px;
-  margin: 10px 0 30px;
+  font-size: 18px;
+  margin: 20px 0 30px;
   padding: 10px;
   width: 100%;
 }
@@ -114,7 +117,7 @@ input[type="number"] {
 .list li {
   background-color: #fff;
   box-shadow: var(--box-shadow);
-  color: #333;
+  color: rgb(19, 18, 18);
   display: flex;
   justify-content: space-between;
   position: relative;
@@ -123,16 +126,18 @@ input[type="number"] {
 }
 
 .list li.plus {
-  border-right: 5px solid #2ecc71;
+  border-right: 8px solid darkslategrey;
+  border-bottom: 2px solid darkslategrey;
 }
 
 .list li.minus {
-  border-right: 5px solid #c0392b;
+  border-right: 5px solid #5f1a13;
+  border-bottom: 2px solid #5f1a13;
 }
 
 .delete-btn {
   cursor: pointer;
-  background-color: #e74c3c;
+  background-color: #5f1a13;
   border: 0;
   color: #fff;
   font-size: 20px;
@@ -147,7 +152,7 @@ input[type="number"] {
 }
 
 .list li:hover .delete-btn {
-  opacity: 1;
+  opacity: 0.9;
 }
 
 @media (max-width: 320px) {
