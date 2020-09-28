@@ -25,12 +25,12 @@ body {
 }
 
 h1 {
-  letter-spacing: 2px;
+  letter-spacing: 3px;
   margin: 0;
 }
 
 h3 {
-  border-bottom: 1px solid #bbb;
+  border-bottom: 1px solid black;
   padding-bottom: 10px;
   margin: 40px 0 10px;
 }
@@ -43,7 +43,7 @@ h4 {
 
 .inc-exp-container {
   box-shadow: var(--box-shadow);
-  border-bottom: 1px solid darkslategrey;
+  border-bottom: 1px solid black;
   padding: 20px;
   display: flex;
   justify-content: space-between;
@@ -56,17 +56,17 @@ h4 {
 }
 
 .inc-exp-container > div:first-of-type {
-  border-right: 1px solid darkslategrey;
+  border-right: 1px solid rgb(51, 63, 30);
 }
 
 .money {
-  font-size: 30px;
-  letter-spacing: 1px;
+  font-size: 40px;
+  letter-spacing: 2px;
   margin: 5px 0;
 }
 
 .money.plus {
-  color: #055a28;
+  color: rgb(51, 63, 30);
 }
 
 .money.minus {
@@ -76,25 +76,31 @@ h4 {
 label {
   display: inline-block;
   margin: 10px 0;
+  font-size: 22px;
 }
 
 input[type="text"],
 input[type="number"] {
-  border-bottom: darkslategrey;
-  border-radius: 2px;
+  border: 0;
+  background-color: transparent;
+  border-bottom: 3px solid black;
   display: block;
   font-family: "Special Elite", cursive;
-  font-size: 16px;
+  font-size: 18px;
   padding: 10px;
   width: 100%;
 }
 
+input::placeholder {
+  color: black;
+}
+
 .btn {
   cursor: pointer;
-  background-color: darkslategrey;
+  background-color: rgb(51, 63, 30);
   font-family: "Special Elite", cursive;
   box-shadow: var(--box-shadow);
-  color: #fff;
+  color: rgb(247, 238, 226);
   border: 0;
   display: block;
   font-size: 18px;
@@ -115,7 +121,8 @@ input[type="number"] {
 }
 
 .list li {
-  background-color: #fff;
+  background-color: rgb(218, 207, 175);
+  opacity: 0.9;
   box-shadow: var(--box-shadow);
   color: rgb(19, 18, 18);
   display: flex;
@@ -126,22 +133,23 @@ input[type="number"] {
 }
 
 .list li.plus {
-  border-right: 8px solid darkslategrey;
-  border-bottom: 2px solid darkslategrey;
+  border-right: 5px solid darkslategrey;
+  border-bottom: 2px solid black;
 }
 
 .list li.minus {
   border-right: 5px solid #5f1a13;
-  border-bottom: 2px solid #5f1a13;
+  border-bottom: 2px solid black;
 }
 
 .delete-btn {
+  font-family: "Special Elite", cursive;
   cursor: pointer;
   background-color: #5f1a13;
   border: 0;
   color: #fff;
-  font-size: 20px;
-  line-height: 20px;
+  font-size: 25px;
+  line-height: 30px;
   padding: 2px 5px;
   position: absolute;
   top: 50%;
@@ -152,7 +160,7 @@ input[type="number"] {
 }
 
 .list li:hover .delete-btn {
-  opacity: 0.9;
+  opacity: 0.8;
 }
 
 @media (max-width: 320px) {
